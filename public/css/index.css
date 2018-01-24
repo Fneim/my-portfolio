@@ -1,0 +1,66 @@
+#content {
+	width:100%;
+	height:100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#scrollable {
+	width: 300%;
+	height:100%;
+	padding-left:0px;
+}
+
+.page {
+	width:100vw;
+	height:100vh;
+	background-image:url("./public/assets/img/hypnotize/hypnotize.png");
+}
+
+.scrollItem {
+	position:absolute;
+	color:#000;
+}
+
+#right {
+	top: 45%;
+	right:100px;
+}
+
+#left {
+	top:45%;
+	left:100px;
+}
+
+#landing {
+	color:#bbb;
+	padding-top:250px;
+}
+
+.work {
+	margin-top:15%;
+}
+
+.rounded-circle {
+	border:5px #fff solid;
+}
+
+#snapshot1 section {
+	padding-top:40px;
+}
+
+#snapshot2 section {
+
+}
+
+#contact-page {
+	padding-top:200px;
+}
+
+textarea {
+	height:100px;
+}
+
+.social {
+	margin:10px;
+}
