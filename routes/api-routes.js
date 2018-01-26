@@ -1,22 +1,17 @@
-var db = require("");
+var Email = require("./../models/emails.js");
 
 module.exports = function(app) {
-  //send messages
 
+  //send messages to the database
   app.post("/api/email", function(req, res) {
-    //recieve user input from url
-    var firstName = req.body.firstName;
-    var lastName = req.body.lastName;
-    var message = req.body.message;
 
-    db.Email.create({
-      fName: firstName,
-      lName: lastName,
-      email: message
-    }).then(function(res) {
-      //results are avaible to us inside .then
-      return res.json(res);
-      console.log(res);
+    new Email({
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      message: req.body.message
+    })
+    .save()
+    .then(function(messages) {
     });
   });
 }

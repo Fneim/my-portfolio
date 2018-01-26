@@ -1,0 +1,13 @@
+DROP DATABASE IF EXISTS email;
+CREATE DATABASE email;
+USE email;
+
+CREATE TABLE messages (
+id INTEGER(11) AUTO_INCREMENT NOT NULL, 
+firstName VARCHAR(50) NOT NULL,
+lastName VARCHAR(50) NOT NULL,
+message VARCHAR(255) NOT NULL,
+primary key(id)
+);
+
+SELECT * FROM messages;
