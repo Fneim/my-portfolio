@@ -34,11 +34,25 @@ $(document).ready(function() {
     //send newMessage object to the server
     //the route /api/email receives newMessage object
     //server executes code to post to the db
-    $.post("api/email", newMessage)
+    // $.ajax({
+    //   url:"/api/emails",
+    //   type: "POST",
+    //   datatype: "json",
+    //   data: {
+    //     "objectData": newMessage
+    //   },
+    //   contentType: "application/json",
+    //   cache:false,
+    //   timeout:5000,
+    //   complete: function() {
+    //     console.log("Message sent!");
+    //   },
+    // });
+
+    $.post("/emails", newMessage)
     .done(function(data) {
       console.log(data);
     });
-
     confirmation();
   });
 

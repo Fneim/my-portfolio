@@ -1,8 +1,7 @@
 var Bookshelf = require("./../config/connection.js");
 
 var Email = Bookshelf.Model.extend({
-  tableName: 'messages',
-  hasTimestamps: true
+  tableName: 'messages'
 });
 
-module.exports = Email;
+module.exports = Bookshelf.model('Email', Email);
