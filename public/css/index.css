@@ -32,9 +32,20 @@
 	left:100px;
 }
 
+#home {
+	background-image: url("footer_lodyas.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 #landing {
 	color:#bbb;
 	padding-top:250px;
+}
+
+#showcase {
+	background-image: url("footer_lodyas.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .work {
@@ -53,13 +64,16 @@
 
 }
 
-#home {
-	/* background-image:url("./public/assets/black_twill/black_twill/black_twill.png"); */
+#contact {
+	background-image: url("halftone-yellow.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
-
 #contact-page {
 	padding-top:200px;
-	/* background-color: url("./public/assets/halftone-yellow/halftone-yellow/halftone.png"); */
+	background-image: url("halftone-yellow.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 textarea {

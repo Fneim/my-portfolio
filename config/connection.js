@@ -23,7 +23,7 @@ var knex =  require('knex')({
   connection: {
     host: 'localhost',
     user: 'root',
-    password: '',
+    password: 'hae3e9f0',
     database: 'email',
     charset: 'utf8'
   }
