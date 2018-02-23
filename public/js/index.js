@@ -1,13 +1,13 @@
 $(document).ready(function() {
   //smooth crolling event when nav arrows are clicked
   //specific to my html code
-  $(".scrollItem").click(function(event) {
-    event.preventDefault();
 
-    var link = $(this).attr("href");
-    $("#content").animate({
-      scrollLeft: $("#content").scrollLeft() + $(link).offset().left
+  $("#scrollable").mouseover(function(event) {
+    event.preventDefault();
+    $("#scrollable").animate({
+      scrollLeft: $("#scrollable").scrollLeft() + $(link).offset().left
     }, 1000);
+
   });
 
   //onclick event to send form data field values to the db
@@ -58,10 +58,12 @@ $(document).ready(function() {
 
   //confirm client's request has been sent
   function confirmation() {
+    alert("Message sent!");
+
     //clear form fjelds
     $("#fName").val("");
     $("#lName").val("");
     $("#message").val("");
-    alert("Message sent!");
+
   }
 });
