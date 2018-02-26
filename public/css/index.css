@@ -1,70 +1,101 @@
-.container-fluid{
-	width:100%;
+@import url('https://fonts.googleapis.com/css?family=Francois+One');
+
+body {
 	height:100%;
-	/* overflow-x: hidden;
-	overflow-y: hidden; */
+	background-color: #daa232;
+}
+
+.flex-wrapper {
+	width:250%;
+	height:500px;
+	margin-top:100px;
+	margin-left: 100px;
+	box-shadow: 5px 20px 30px 20px #c68910;
+	background-color:#fff;
+	position: relative;
 }
 
 .flex-container {
 	display:flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-}
-
-#scrollable {
-	width:280%;
-	height:500px;
-	padding:0px;
-	margin-top:10%;
-	box-shadow: 0 2rem 4rem 2rem rgba(46, 43, 55, 0.575);
-}
-
-.scroll-content {
+	flex-wrap:wrap;
 	height:100%;
 }
 
-#headline {
+.box {
+	height:100%;
+}
+
+/* .box:hover {
+	box-shadow: 10px 10px 10px 10px #ddd;
+} */
+
+#firstBox {
+	padding-left:70px;
+	padding-top: 100px;
 	width:25%;
-	background-color:#00695c;
-	padding:100px 0 0 70px;
-	color:#ccc;
-	opacity: 0.6;
-	filter: alpha(opacity=50);
+	color:#da9100;
+	font-family: 'Francois One';
+	font-size: 40px;
 }
 
-.h1-big {
-	font-size:60px;
+a {
+	color: #2c0a96;
 }
-#profile-img {
+
+#secondBox {
 	width:10%;
-	background-color:#fff;
-}
-
-#projects {
-	width:37%;
 	padding:0;
-	background-color: #e57373;
 }
 
-.project-web {
-	width:100%;
-	float:left;
+#thirdBox {
+	width: 40%;
+	/* background-color: #965353; */
 }
 
-#connect {
-	width:8%;
-	background-color:#ede7f6;
+.flex-box {
+	display:flex;
+	flex-wrap: nowrap;
 }
 
-#contact {
-	width:20%;
-	padding:60px 50px 10px 50px;
-	background-color:#c62828;
-	opacity: 0.9;
-	filter: alpha(opacity=50);
+.nested-box {
+	width:25%;
+}
+
+#fourthBox {
+	width: 10%;
+	/* background-color:#325a5a; */
+}
+
+#fifthBox {
+	width:15%;
+	background-color:#000000;
+}
+
+/* @media screen and (max-width: 768px) {
+	html {
+		background-color:#000;
+	}
+
+	.box {
+		flex-wrap: wrap;
+	}
+} */
+
+form {
+	padding:5px;
+	margin:50px;
 }
 
 textarea {
-	height:100px;
+	height:170px;
+}
+
+label {
+	color: #999;
+}
+
+i {
+	display: block;
+	margin:5px;
+	color: #999;
 }

@@ -2,13 +2,24 @@ $(document).ready(function() {
   //smooth crolling event when nav arrows are clicked
   //specific to my html code
 
-  $("#scrollable").mouseover(function(event) {
-    event.preventDefault();
-    $("#scrollable").animate({
-      scrollLeft: $("#scrollable").scrollLeft() + $(link).offset().left
-    }, 1000);
+  // $("#firstArrow").click(function(event) {
+  //   if(this.hash == "") {
+  //     event.preventDefault();
+  //     var hash = this.hash;
+  //
+  //     $("html, body").animate({
+  //       scrollLeft: $(hash).offset().left
+  //     }, 600, function() {
+  //       window.location.hash = hash;
+  //     });
+  //   }
+  // })
 
-  });
+  $("#firstArrow").click(function(){
+      var currentElement = $(this).attr("href")l
+      $('html, body').animate({scrollLeft: $(currentElement).offset().left
+      }, 800);
+   });
 
   //onclick event to send form data field values to the db
   $("#form-btn").click(function(event) {
@@ -30,24 +41,6 @@ $(document).ready(function() {
       message: message
     };
     console.log(newMessage);
-
-    //send newMessage object to the server
-    //the route /api/email receives newMessage object
-    //server executes code to post to the db
-    // $.ajax({
-    //   url:"/api/emails",
-    //   type: "POST",
-    //   datatype: "json",
-    //   data: {
-    //     "objectData": newMessage
-    //   },
-    //   contentType: "application/json",
-    //   cache:false,
-    //   timeout:5000,
-    //   complete: function() {
-    //     console.log("Message sent!");
-    //   },
-    // });
 
     $.post("/emails", newMessage)
     .done(function(data) {

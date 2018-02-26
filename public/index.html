@@ -8,55 +8,69 @@
 		<link rel="stylesheet" type="text/css" href="./css/index.css" />
 	</head>
 	<body>
-		<div class="container-fluid">
-			<div id="scrollable" class="flex-container">
-					<div id="headline" class="scroll-content">
-						<h1 class="h1-big">Hi, I'm Fargin.</h1>
-						<h1 class="h1-big">I create web applications.</h1>
-						<p>from concept to deployment</h4>
-					</div>
-					<div id="profile-img" class="scroll-content">
-						<img src="./assets/ironman.jpg" alt="Fargin Neim" width="100%" height="100%" />
-					</div>
-					<div id="projects" class="scroll-content flex-container">
-						<div class="project-web">
-							<img src="./assets/pick-a-flick.PNG" alt="Pick A Flick" width="100%" height="100%" />
+		<div class="flex-wrapper">
+		<div class="flex-container">
+				<div id="firstBox" class="box">
+						<h1>Hi, I'm Fargin,</h1>
+						<h1>I create web applications.</h1>
+						<p>from concept to deployment</p>
+						<a id="firstArrow" href="#thirdBox" class="fa fa-chevron-right"></a>
+				</div>
+				<!-- 		display profile image -->
+				<div id="secondBox" class="box">
+						<img src="./assets/cartoon-me3.jpg" alt="ironman" width="100%" height="100%" />
+				</div>
+
+				<!-- 		display projects -->
+				<div id="thirdBox" class="flex-box box">
+						<div id="firstWeb" class="nested-box">
+							<img src="./assets/pick-a-flick.PNG" width="100%" height="100%" />
 						</div>
-						<div class="project-web">
-							<img src="./assets/pick-a-flick.PNG" alt="Pick A Flick" width="100%" height="100%" />
+						<div id="secondWeb" class="nested-box">
+							<img src="./assets/article-weather.PNG" width="100%" height="100%" />
 						</div>
-						<div class="project-web">
-							<img src="./assets/pick-a-flick.PNG" alt="Pick A Flick" width="100%" height="100%" />
-						</div>
-						<div class="project-web">
-							<img src="./assets/article-weather.PNG" width="100%" height="100%" alt="Serena L."/>
-						</div>
-					</div>
-					<div id="connect" class="scroll-content">
-						<i class="fa fa-linkedin"></i>
-					</div>
-					<div id="contact" class="scroll-content">
-						<form class="form" action="/emails" method="POST">
-							<div class="form-row">
-								<div class="form-group col">
-									<input id="fName" type="text" class="form-control" placeholder="first name" />
+						<div id="thirdWeb" class="nested-box"></div>
+						<div id="fourthWeb" class="nested-box"></div>
+				</div>
+
+				<!-- 		display connections -->
+				<div id="fourthBox" class="box">Mom</div>
+
+				<!-- 		display contact form -->
+				<div id="fifthBox" class="box">
+						<form>
+								<div class="form-row">
+										<div class="form-group col">
+											<label for="fullname">Full Name</label>
+												<input id="fullname" type="text" class="form-control" placeholder="you"/>
+										</div>
+										<div class="form-group col">
+											<label for="email">Email</label>
+												<input id="email" type="text" class="form-control" placeholder="you@service.com" />
+										</div>
 								</div>
-								<div class="form-group col">
-									<input id="lName" type="text" class="form-control" placeholder="last name" />
+								<div class="form-row">
+									<div class="form-group col">
+										<label for="message">Message</label>
+										<textarea id="message" type="text" class="form-control"></textarea>
+									</div>
 								</div>
+							<div class="row">
+								<div class="col-sm">
+									<i class="fa fa-linkedin fa-2x"><a href="#"></a></i> <br />
+									<i class="fa fa-github fa-2x"></i><a href="#"></a> <br />
+									<i class="fa fa-stack-overflow fa-2x"><a href="#"></a></i>
+								</div>
+								<div class="col-sm"></div>
 							</div>
-							<div class="form-group">
-								<textarea id="message" type="text" class="form-control" placeholder="message"></textarea>
-							</div>
-							<button id="form-btn" type="submit" class="btn btn-block">Send</button>
 						</form>
-					</div>
 				</div>
 		</div>
-		<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
+
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="./js/index.js"></script>
 	</body>
 </html>
