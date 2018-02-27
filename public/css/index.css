@@ -1,101 +1,88 @@
 @import url('https://fonts.googleapis.com/css?family=Francois+One');
 
-body {
+html, body {
 	height:100%;
+	width:100%;
 	background-color: #daa232;
 }
 
-.flex-wrapper {
-	width:250%;
-	height:500px;
-	margin-top:100px;
-	margin-left: 100px;
-	box-shadow: 5px 20px 30px 20px #c68910;
+.container-fluid {
 	background-color:#fff;
-	position: relative;
+	width:90%;
+	margin-top: 50px;
+	margin-left:5%;
+	margin-bottom:30px;
+	box-shadow: 5px 20px 30px 20px #c68910;
 }
-
-.flex-container {
-	display:flex;
-	flex-wrap:wrap;
-	height:100%;
-}
-
-.box {
-	height:100%;
-}
-
-/* .box:hover {
-	box-shadow: 10px 10px 10px 10px #ddd;
-} */
 
 #firstBox {
-	padding-left:70px;
-	padding-top: 100px;
-	width:25%;
-	color:#da9100;
+	color: #da9100;
 	font-family: 'Francois One';
 	font-size: 40px;
-}
-
-a {
-	color: #2c0a96;
+	padding-left: 70px;
+	padding-top:100px;
 }
 
 #secondBox {
-	width:10%;
-	padding:0;
+	padding:0px;
 }
 
-#thirdBox {
-	width: 40%;
-	/* background-color: #965353; */
+.box {
+	height:300px;
 }
 
-.flex-box {
-	display:flex;
-	flex-wrap: nowrap;
+#connect-box {
+	background-color: #341988;
+	/* #1e8383; */
+	padding-top:50px;
 }
 
-.nested-box {
-	width:25%;
-}
-
-#fourthBox {
-	width: 10%;
-	/* background-color:#325a5a; */
-}
-
-#fifthBox {
-	width:15%;
-	background-color:#000000;
-}
-
-/* @media screen and (max-width: 768px) {
-	html {
-		background-color:#000;
-	}
-
-	.box {
-		flex-wrap: wrap;
-	}
-} */
 
 form {
 	padding:5px;
-	margin:50px;
+	/* margin:0 30px 0 30px; */
+	margin:auto;
+}
+
+label {
+	color: #bbb;
 }
 
 textarea {
 	height:170px;
 }
 
-label {
-	color: #999;
+.social-btns {
+	display: block;
+	margin-top:15px;
+	margin-left: 48%;
+	color: #341988;
+	padding-top: 15px;
 }
 
-i {
-	display: block;
-	margin:5px;
-	color: #999;
+.contact-btns {
+	color: #eee;
+}
+
+@media only and (max-width: 768px) {
+	.social-btns, .contact-btns {
+		margin-left:0;
+	}
+}
+
+#btn {
+	border:1px solid #fff;
+	background-color:#341988;
+	color:#fff;
+}
+
+#btn:hover {
+	background-color:#fff;
+	color:#341988;
+}
+
+#copyright {
+	position:absolute;
+	left:5%;
+	padding-bottom: 10px;
 }

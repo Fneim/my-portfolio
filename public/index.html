@@ -8,66 +8,77 @@
 		<link rel="stylesheet" type="text/css" href="./css/index.css" />
 	</head>
 	<body>
-		<div class="flex-wrapper">
-		<div class="flex-container">
-				<div id="firstBox" class="box">
-						<h1>Hi, I'm Fargin,</h1>
-						<h1>I create web applications.</h1>
-						<p>from concept to deployment</p>
-						<a id="firstArrow" href="#thirdBox" class="fa fa-chevron-right"></a>
-				</div>
-				<!-- 		display profile image -->
-				<div id="secondBox" class="box">
-						<img src="./assets/cartoon-me3.jpg" alt="ironman" width="100%" height="100%" />
-				</div>
-
-				<!-- 		display projects -->
-				<div id="thirdBox" class="flex-box box">
-						<div id="firstWeb" class="nested-box">
-							<img src="./assets/pick-a-flick.PNG" width="100%" height="100%" />
+		<div class="container-fluid">
+				<div class="row">
+						<div id="firstBox" class="col-lg-8">
+								<h1>Hi, I'm Fargin,</h1>
+								<h1>I create web applications.</h1>
+								<p>from concept to deployment</p>
 						</div>
-						<div id="secondWeb" class="nested-box">
-							<img src="./assets/article-weather.PNG" width="100%" height="100%" />
+						<!-- 		display profile image -->
+						<div id="secondBox" class="col-lg-4">
+								<img src="./assets/cartoon-me3.jpg" alt="ironman" width="100%" height="100%" />
 						</div>
-						<div id="thirdWeb" class="nested-box"></div>
-						<div id="fourthWeb" class="nested-box"></div>
-				</div>
-
-				<!-- 		display connections -->
-				<div id="fourthBox" class="box">Mom</div>
-
-				<!-- 		display contact form -->
-				<div id="fifthBox" class="box">
-						<form>
-								<div class="form-row">
-										<div class="form-group col">
-											<label for="fullname">Full Name</label>
-												<input id="fullname" type="text" class="form-control" placeholder="you"/>
-										</div>
-										<div class="form-group col">
-											<label for="email">Email</label>
-												<input id="email" type="text" class="form-control" placeholder="you@service.com" />
-										</div>
-								</div>
-								<div class="form-row">
-									<div class="form-group col">
-										<label for="message">Message</label>
-										<textarea id="message" type="text" class="form-control"></textarea>
-									</div>
-								</div>
-							<div class="row">
-								<div class="col-sm">
-									<i class="fa fa-linkedin fa-2x"><a href="#"></a></i> <br />
-									<i class="fa fa-github fa-2x"></i><a href="#"></a> <br />
-									<i class="fa fa-stack-overflow fa-2x"><a href="#"></a></i>
-								</div>
-								<div class="col-sm"></div>
-							</div>
-						</form>
 				</div>
 		</div>
-
-	</div>
+		<div class="container-fluid">
+				<div class="row">
+						<!-- 		display projects -->
+						<div id="firstWeb" class="box col-lg">
+							<img src="./assets/pick-a-flick.PNG" width="100%" height="100%" />
+						</div>
+						<div id="secondWeb" class="box col-lg">
+							<img src="./assets/article-weather.PNG" width="100%" height="100%" />
+						</div>
+						<div id="thirdWeb" class="box col-lg">
+							<img src="./assets/stony.jpg" width="100%" height="100%" />
+						</div>
+						<div id="fourthWeb" class="box col-lg">
+							<img src="./assets/ironman.jpg" width="100%" height="100%" />
+						</div>
+				</div>
+		</div>
+		<div class="container-fluid">
+				<div id="connect-box" class="row">
+						<!-- 		display connections -->
+						<div class="col-lg-2">
+							<div id="fourthBox">
+								<button class="btn btn-inline social-btns"><i class="fa fa-linkedin fa-2x"><a href="https://www.linkedin.com/in/fargin-neim/"></a></i></button>
+								<button class="btn btn-inline social-btns"><i class="fa fa-github fa-2x"></i><a href="https://github.com/Fneim"></a></button>
+								<button class="btn btn-inline social-btns"><i class="fa fa-stack-overflow fa-2x"><a href="https://stackoverflow.com/users/8427479/fargin-neim"></a></i></button>
+							</div>
+						</div>
+						<div class="col-lg-2">
+							<section>
+								<i class="fa fa-home contact-btns"> San Diego, CA 92111 US</i>
+								<i class="fa fa-envelope contact-btns"> farginneim@gmail.com</i>
+								<i class="fa fa-phone contact-btns"> (858) 262-4376</i>
+							</section>
+						</div>
+						<!-- 		display contact form -->
+						<div id="fifthBox" class="col-lg-6">
+								<form>
+										<div class="form-row">
+												<div class="form-group col">
+													<label for="fullname">Full Name</label>
+														<input id="fullname" type="text" class="form-control" placeholder="jane" />
+												</div>
+												<div class="form-group col">
+													<label for="email">Email</label>
+														<input id="email" type="text" class="form-control" placeholder="jane@email.com" />
+												</div>
+										</div>
+										<div class="form-row">
+												<div class="form-group col">
+														<textarea type="text" class="form-control"></textarea>
+												</div>
+										</div>
+										<button id="btn" type="submit" class="btn btn-inline">Send</button>
+								</form>
+						</div>
+				</div>
+		</div>
+		<div id="copyright">&copy 2018 Fargin Neim</div>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
