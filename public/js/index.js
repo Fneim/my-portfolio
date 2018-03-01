@@ -2,24 +2,16 @@ $(document).ready(function() {
   //smooth crolling event when nav arrows are clicked
   //specific to my html code
 
-  // $("#firstArrow").click(function(event) {
-  //   if(this.hash == "") {
-  //     event.preventDefault();
-  //     var hash = this.hash;
-  //
-  //     $("html, body").animate({
-  //       scrollLeft: $(hash).offset().left
-  //     }, 600, function() {
-  //       window.location.hash = hash;
-  //     });
-  //   }
-  // })
+  function loadContent() {
+    setTimeout(function() {
+      $("#loader-div").removeClass("h-100");
+      $("#loader").css("display", "none");
+      $(".container-fluid").css("display","block");
+      $(".page-footer").css("display", "block");
+    }, 3000);
+  }
 
-  $("#firstArrow").click(function(){
-      var currentElement = $(this).attr("href")l
-      $('html, body').animate({scrollLeft: $(currentElement).offset().left
-      }, 800);
-   });
+  window.onload(loadContent());
 
   //onclick event to send form data field values to the db
   $("#form-btn").click(function(event) {
