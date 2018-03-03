@@ -4,13 +4,19 @@ $(document).ready(function() {
 
   function loadContent() {
     setTimeout(function() {
-      $("#loader-div").removeClass("h-100");
-      $("#loader").css("display", "none");
-      $(".container-fluid").css("display","block");
-      $(".page-footer").css("display", "block");
-    }, 3000);
-  }
+      $("#loader").remove();
+      $("#landing").fadeOut(1000, function() {
+        // $(".about-btn").fadeIn(600).css("display", "inline-block");
+        $("").css({"background-image": "url('./css/light-veneer.png')",
+                     "background-repeat": "no-repeat", "background-size": "cover"});
+        $(".container-fluid").fadeIn(600).css("display", "block");
+        $(".page-footer").fadeIn(600).css("display", "block");
+        $("#content").fadeIn(600).css({"display": "block", "height":"20px", "width": "50px", "left":"0", "top":"0", "z-index": "2"});
+        $(".logo").css("display","block");
+      });
 
+    }, 2000);
+  }
   window.onload(loadContent());
 
   //onclick event to send form data field values to the db
