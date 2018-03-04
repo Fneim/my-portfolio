@@ -51,11 +51,9 @@ body {
 .container-fluid {
 	width: 80%;
 	margin-top: 50px;
-	margin-right:0;
 	margin-bottom: 30px;
-	box-shadow: 20px 10px 20px 10px #cccccc;
+	/* box-shadow: 15px 10px 15px 5px #cccccc; */
 	display: none;
-	background-color: #fff;
 }
 
 #firstBox {
@@ -65,16 +63,31 @@ body {
 	padding-left: 70px;
 	padding-top: 100px;
 	height:350px;
+	border-bottom: 5px solid #333333;
+}
+
+#p-firstBox {
+	font-size:16px !important;
 }
 
 #secondBox {
 	padding: 50px;
 }
-#p-firstBox {
-	font-size:16px !important;
+
+.rounded-circle {
+	text-align:center;
+	border:6px solid #ddd;
+	box-shadow: 15px 10px 15px 5px #cccccc;
+
 }
+
 .box {
 	text-align: center;
+	height:350px;
+	margin: 10px;
+	padding-top: 20px;
+	background-color: #333333;
+	color:#ddd;
 }
 
 .row .box {
@@ -83,19 +96,14 @@ body {
 
 .box:hover {
 	z-index:2;
-	/* border:1px solid #666666; */
 	padding:0;
-	transition: scale(1.2);
-}
-
-.rounded-circle {
-	text-align:center;
-	border:6px solid #ddd;
+	box-shadow: 15px 10px 15px 5px #cccccc;
 }
 
 .img-fluid {
 	margin-bottom: 0;
 	padding-bottom:0;
+	height:auto;
 }
 
 .fa-gamepad {
@@ -129,9 +137,5 @@ h2 {
 }
 
 @media only and (max-width : 480px) {
-	.container-fluid {
-		width:90%;
-		margin-left:5%;
-		margin-right:5%;
-	}
+
 }

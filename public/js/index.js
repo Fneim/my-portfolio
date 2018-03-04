@@ -7,7 +7,7 @@ $(document).ready(function() {
       $("#loader").remove();
       $("#landing").fadeOut(1000, function() {
         // $(".about-btn").fadeIn(600).css("display", "inline-block");
-        $("").css({"background-image": "url('./css/light-veneer.png')",
+        $("body").css({"background-image": "url('./assets/dust_scratches.png')",
                      "background-repeat": "no-repeat", "background-size": "cover"});
         $(".container-fluid").fadeIn(600).css("display", "block");
         $(".page-footer").fadeIn(600).css("display", "block");
@@ -15,7 +15,7 @@ $(document).ready(function() {
         $(".logo").css("display","block");
       });
 
-    }, 2000);
+    }, 1000);
   }
   window.onload(loadContent());
 
