@@ -6,18 +6,19 @@ $(document).ready(function() {
     setTimeout(function() {
       $("#loader").remove();
       $("#landing").fadeOut(1000, function() {
-        // $(".about-btn").fadeIn(600).css("display", "inline-block");
-        $("body").css({"background-image": "url('./assets/dust_scratches.png')",
+        $("html, body").css({"background-image": "url('./assets/dust_scratches.png')",
                      "background-repeat": "no-repeat", "background-size": "cover"});
-        $(".container-fluid").fadeIn(600).css("display", "block");
+        $(".jumbotron").css("background-color", "#333333");
+        $(".container").fadeIn(600).css("display", "block");
+        $(".rounded-circle").css("display", "block").fadeIn(600);
         $(".page-footer").fadeIn(600).css("display", "block");
-        $("#content").fadeIn(600).css({"display": "block", "height":"20px", "width": "50px", "left":"0", "top":"0", "z-index": "2"});
+        $("#content").fadeIn(600).css({"display": "block", "height":"20px", "width": "50px", "left":"0", "top":"0", "z-index": "1"});
         $(".logo").css("display","block");
       });
-
     }, 1000);
   }
   window.onload(loadContent());
+
 
   //onclick event to send form data field values to the db
   $("#form-btn").click(function(event) {
