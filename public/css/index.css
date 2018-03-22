@@ -85,7 +85,7 @@ h1 {
 
 .rounded-circle {
 	padding:20px;
-	border-radius: 50%;
+	border-radius: 50% !important;
 	text-align:center;
 	box-shadow: 10px 5px 10px 0px #000000;
 	animation: rollIn 1s linear;
