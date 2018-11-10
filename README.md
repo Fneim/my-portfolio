@@ -2,5 +2,4 @@
 Technologies:
 Node
 Express
-MySql
-Bookshelf/Knex
+Boostrap
