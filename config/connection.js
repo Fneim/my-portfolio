@@ -10,7 +10,3 @@ var knex =  require('knex')({
     charset: 'utf8'
   }
 });
-
-var Bookshelf = require('bookshelf')(knex);
-Bookshelf.plugin('registry');
-module.exports = Bookshelf;
