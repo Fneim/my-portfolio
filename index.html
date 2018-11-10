@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/css/mdb.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="src/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container-fluid ">
+        <div class="row">
+          <div class="col text-muted h-100 position-relative intro">
+            <div class="position-absolute">
+              <h1 class="display-3">Fargin Neim</h1>
+              <h1 class="display-3">Full Stack Web Developer.</h1>
+              <a
+                href="#works"
+                class="btn btn-inline-block btn-lg cyan darken-3 text-white text-uppercase works-btn"
+                >Works</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container p-5 mb-5">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+            <img
+              src="src/profile.png"
+              class="rounded-circle img-fluid mx-auto d-block"
+              width="180px"
+              height="180px"
+            />
+          </div>
+          <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 p-2">
+            <p class="lead align-middle">
+              I'm passionate about building apps that make your business look
+              great! Thats on even days. On odd days, I'm crazy about gaming.
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into electro
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="works" class="row">
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="card mb-5">
+              <img
+                class="card-img img-fluid h-auto"
+                src="src/img/youreact_screen.PNG"
+              />
+              <div class="card-body ol">
+                <p class="card-text text-dark">
+                  YouReact is an HTML, CSS, and Vanilla JavaScript project that
+                  utilizes the YouTube Data API to search for reaction videos
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="card mb-5">
+              <img
+                class="card-img img-fluid h-auto"
+                src="src/img/screenshot.png"
+              />
+              <div class="card-body ol">
+                <p class="card-text text-dark">
+                  This is a Vue based application that uses the Express Api and
+                  MySQL to authenticate login.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6">
+            <div class="card mb-3">
+              <img class="card-img img-fluid h-auto" src="src/img/pickaflick.png" />
+              <div class="card-body ol">
+                <p class="card-text text-dark">
+                  Pick A Flick is a MySqlERN Stack Project I created with a
+                  group of friends. We used Movie Api to get json data of the
+                  movies selected based on moods. Our backend is Node w/ Express
+                  API, MySql, and Firebase for user authentication.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer cyan darken-3 mt-3 p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-lg-6 px-5">
+            <div class="d-flex justify-content-around">
+              <a href="https://github.com/Fneim"><i class="fa fa-github fa-lg fa-2x" /></a>
+			        <a href="https://www.linkedin.com/in/fargin-neim/"><i class="fa fa-linkedin fa-lg fa-2x" /></a>
+	            <a href=""><i class="fa fa-twitter fa-lg fa-2x" /></a>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6 col-lg-6 mt-4">
+            <div class="card">
+              <div class="card-header text-center">
+                <h4 class="cyan-text darken-3">Send me a message!</h4>
+              </div>
+              <div class="card-body">
+                <div class="md-form text-center mx-3">
+                  <input id="name" type="text" class="form-control" placeholder="name"/>
+                  <input type="text" class="form-control" placeholder="email" />
+                  <textarea type="text" class="form-control md-textarea" rows="3">message</textarea>
+              </div
+            </div>
+          </div>
+      </div>
+    </footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
