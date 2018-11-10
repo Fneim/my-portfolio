@@ -4,29 +4,19 @@
     <meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-      crossorigin="anonymous"
-    />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+  <!-- Font Awesome -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" />
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/css/mdb.min.css" rel="stylesheet" />
 
-    <!-- Material Design Bootstrap -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/css/mdb.min.css"
-      rel="stylesheet"
-    />
-
-    <link href="src/index.css" rel="stylesheet" />
+    <link href="/index.css" rel="stylesheet" />
   </head>
 
   <body>
+
+    <!-- header section -->
     <header>
       <div class="container-fluid ">
         <div class="row">
@@ -37,20 +27,22 @@
               <a
                 href="#works"
                 class="btn btn-inline-block btn-lg cyan darken-3 text-white text-uppercase works-btn"
-                >Works</a
-              >
+                >Works</a>
             </div>
           </div>
         </div>
       </div>
     </header>
 
+    <!-- main section -->
     <main>
+
+      <!-- about me section -->
       <div class="container p-5 mb-5">
         <div class="row">
           <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
             <img
-              src="src/profile.png"
+              src="/img/profile.png"
               class="rounded-circle img-fluid mx-auto d-block"
               width="180px"
               height="180px"
@@ -70,13 +62,30 @@
         </div>
       </div>
 
+      <!-- skills section -->
+      <div class="container mb-3">
+          <div id="works" class="row">
+            <div class="d-flex p-2 text-light">
+              <p class="h5 d-inline text-uppercase mr-3">html</p>
+              <p class="h5 d-inline text-uppercase mr-3">css</p>
+              <p class="h5 d-inline text-uppercase mr-3">javascript</p>
+              <p class="h5 d-inline text-uppercase mr-3">bootstrap</p>
+              <p class="h5 d-inline text-uppercase mr-3">node</p>
+              <p class="h5 d-inline text-uppercase">mysql</p>
+            </div>
+          </div>
+      </div>
+
+      <!-- projects section -->
+
+      <!-- card 1 -->
       <div class="container">
         <div id="works" class="row">
           <div class="col-xs-12 col-sm-12 col-md-6">
             <div class="card mb-5">
               <img
                 class="card-img img-fluid h-auto"
-                src="src/img/youreact_screen.PNG"
+                src="/img/youreact_screen.PNG"
               />
               <div class="card-body ol">
                 <p class="card-text text-dark">
@@ -87,11 +96,12 @@
             </div>
           </div>
 
+          <!-- card 2 -->
           <div class="col-xs-12 col-sm-12 col-md-6">
             <div class="card mb-5">
               <img
                 class="card-img img-fluid h-auto"
-                src="src/img/screenshot.png"
+                src="/img/pickaflick.png"
               />
               <div class="card-body ol">
                 <p class="card-text text-dark">
@@ -102,12 +112,13 @@
             </div>
           </div>
 
+          <!-- card 3-->
           <div class="col-xs-12 col-sm-12 col-md-6">
             <div class="card mb-3">
-              <img class="card-img img-fluid h-auto" src="src/img/pickaflick.png" />
+              <img class="card-img img-fluid h-auto" src="/img/pickaflick.png" />
               <div class="card-body ol">
                 <p class="card-text text-dark">
-                  Pick A Flick is a MySqlERN Stack Project I created with a
+                  Pick A Flick is a MERN Stack Project I created with a
                   group of friends. We used Movie Api to get json data of the
                   movies selected based on moods. Our backend is Node w/ Express
                   API, MySql, and Firebase for user authentication.
@@ -119,32 +130,47 @@
       </div>
     </main>
 
-    <footer class="page-footer cyan darken-3 mt-3 p-4">
+    <!-- footer section -->
+    <footer class="page-footer unique-color-dark mt-3">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-6 col-lg-6 px-5">
-            <div class="d-flex justify-content-around">
-              <a href="https://github.com/Fneim"><i class="fa fa-github fa-lg fa-2x" /></a>
-			        <a href="https://www.linkedin.com/in/fargin-neim/"><i class="fa fa-linkedin fa-lg fa-2x" /></a>
-	            <a href=""><i class="fa fa-twitter fa-lg fa-2x" /></a>
-            </div>
-          </div>
-          <div class="col-xs-12 col-md-6 col-lg-6 mt-4">
-            <div class="card">
-              <div class="card-header text-center">
-                <h4 class="cyan-text darken-3">Send me a message!</h4>
+          <div class="col">
+            <div class="d-flex justify-content-center p-2">
+              <a href="https://github.com/Fneim" class="m-3"><i class="fa fa-github fa-lg fa-2x"></i></a>
+			        <a href="https://www.linkedin.com/in/fargin-neim/" class="m-3"><i class="fa fa-linkedin fa-lg fa-2x"></i></a>
+	            <a href="https://twitter.com/cant_find_1" class="m-3"><i class="fa fa-twitter fa-lg fa-2x"></i></a>
+              <button type="button" class="btn uppercase text-dark" data-toggle="modal" data-target="#contactModal">contact</button>
+              <div id="contactModal" class="modal fade">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Send me a message!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="form-group">
+                          <input type="" />
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="card-body">
-                <div class="md-form text-center mx-3">
-                  <input id="name" type="text" class="form-control" placeholder="name"/>
-                  <input type="text" class="form-control" placeholder="email" />
-                  <textarea type="text" class="form-control md-textarea" rows="3">message</textarea>
-              </div
             </div>
           </div>
       </div>
-    </footer>
+    </div>
 
-    <script src="src/index.js"></script>
+    <div class="footer-copyright text-center py-3 text-uppercase">&copy; 2018 copyright:
+      <a href="#">Fargin Neim</a></div>
+    </footer>
+<!-- footer -->
+
+<!-- bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>

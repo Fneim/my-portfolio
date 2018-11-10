@@ -76,19 +76,6 @@ i,
 }
 
 @media only screen and (min-width: 768px) {
-  /* .social {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-  } */
-
-  /* .social span {
-    display: block;
-  } */
-
   #works {
     margin-left: 50px;
     margin-right: 50px;

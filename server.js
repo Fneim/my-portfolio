@@ -1,20 +1,14 @@
-global.fetch = require('node-fetch');
+// global.fetch = require('node-fetch');
+const express = require("express");
+const bodyParser = require("body-parser");
+const path = require("path");
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-var express = require("express");
-var bodyParser = require("body-parser");
-var app = express();
-var PORT = process.env.PORT || 3000;
+app.use(express.static(__dirname + "/src"));
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true}));
-app.use(bodyParser.text());
-app.use(bodyParser.json({ type: "application/vnd.api+json"}));
-
-app.use(express.static("public"));
-
-require("./routes/api-routes.js")(app);
-require("./routes/html-routes.js")(app);
-
-app.listen(PORT, function() {
-	console.log("App listening on port " + PORT);
+app.get("/", (req, res) => {
+	res.sendFile(path.join(__dirname + "/index.html"));
 });
+
+app.listen(PORT, () => console.log( `Listening on port ${PORT}`));
