@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   margin: 0;
@@ -16,14 +20,18 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.works-btn {
+  background: #76323f;
+}
+
 i,
 .works-btn:hover {
   transform: scale(1.1);
 }
 
-.social {
-  display: none;
-  color: #fff;
+
+#tech {
+  background: #76323f;
 }
 
 .card {
@@ -54,9 +62,6 @@ i,
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* .card:hover img {
-  opacity: 0.3;
-} */
 
 .card:hover .ol {
   opacity: 0.92;
