@@ -2,4 +2,4 @@
 Technologies:
 Node
 Express
-Boostrap
+Bootstrap
