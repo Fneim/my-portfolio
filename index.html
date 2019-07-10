@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Parcel Sandbox</title>
@@ -7,348 +8,287 @@
     <!-- Font Awesome -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
     />
     <!-- Bootstrap core CSS -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
     />
-    <!-- Material Design Bootstrap -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Animate -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/css/mdb.min.css"
-      rel="stylesheet"
+      rel="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
-      rel="stylesheet"
-    />
-    <link href="src/index.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="src/index.css" />
   </head>
 
   <body>
-    <!-- HEADER SECTION -->
-    <header>
-      <!-- intro -->
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col text-center py-2">
-            <img
-              style="width:50px; height:50px;"
-              class="rounded-circle"
-              src="http://images.unsplash.com/photo-1530482817083-29ae4b92ff15?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9"
-            />
+    <!-- containing div -->
+    <div id="app" class="overflow-auto">
+      <div class="jumbotron position-sticky sitcky-top rounded-0">
+        <div class="overlay"></div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col home-content">
+              <div class="d-inline-block shadow rounded-circle profile-img p-1">
+                <img
+                  src="src/fargin.jpg"
+                  class="border d-block mx-auto rounded-circle"
+                  width="100px"
+                  height="100px"
+                  alt="profile pic of Fargin"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col home-content text-light">
+              <span class="display-4 text-uppercase">fargin neim</span><br />
+              <span class="h1">web developer</span>
+            </div>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col py-2"><h3 class="lead">portfolio</h3></div>
-        </div>
       </div>
-    </header>
 
-    <main>
-      <!-- MAIN SECTION -->
-      <div class="container-fluid">
-        <div class="row unique">
-          <div class="slide-container h-50 col">
-            <div class="card bg-dark border-0 rounded-0">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-md bg-dark position-sticky sticky-top">
+        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapsibleNavbar"
+        >
+          <span class="fas fa-align-justify"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mr-3">
+              <a id="about" class="nav-link text-uppercase" href="#">about</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a id="work" class="nav-link text-uppercase" href="#">work</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a id="contact" class="nav-link text-uppercase" href="#"
+                >contact</a
+              >
+            </li>
+            <li class="nav-item mr-3">
+              <a
+                class="nav-link d-inline-block"
+                href="https://www.linkedin.com/in/fargin-neim"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a class="nav-link d-inline-block" href="https://github.com/Fneim"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a class="nav-link d-inline-block" href="#"
+                ><i class="fas fa-envelope"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- about -->
+      <section id="about-section" class="container">
+        <div class="row h-50 mt-4">
+          <div
+            class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-md-left text-lg-left"
+          >
+            <h2 class="h4 text-uppercase mb-3 headings">skills</h2>
+            <p class="h5 text-md-left text-lg-left about-me-text">
+              I'm a <strong>Front End Web Developer</strong> with a burning
+              drive to learn new technologies and create! <br /><br />My toolset
+              consists of
+              <strong>Javascript, React, Vue, Express, and Node. </strong> I can
+              also play the role of a back-end developer. <br /><br />
+              I like to pass my time reading, geeking over anime, and wishing I
+              had super powers.
+            </p>
+          </div>
+          <div
+            class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-md-left text-lg-left"
+          >
+            <h2 class=" h4 text-uppercase mb-3 headings">experience</h2>
+            <ul class="list-group experience-text">
+              <li class="h5 border-0">Avocado Tutors - Wordpress Developer</li>
+              <li class="h5 border-0">
+                RipeMetrics - Software Development Intern
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- works -->
+      <section id="work-section" class="container mt-4">
+        <div class="row">
+          <div class="col">
+            <h3 class="h4 text-uppercase headings">Projects</h3>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="card">
               <img
-                class="card-img h-100"
+                class="card-img-top h-100"
+                src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/_daI-travels-sake.JPG"
+              />
+              <div class="card-body ol">
+                <p class="card-text text-light px-3 w-100">
+                  Travel for Travel's Sake! You can be poor and go on vacation!
+                  That's the idea behind this application. I used Vue and
+                  Leezair Vacation Api to build an app that finds trips for
+                  based on your budget and your location.
+                  <button class="btn btn-block"><a href="#">site</a></button>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-xs-2 mt-sm-2">
+            <div class="card bg-dark">
+              <img
+                class="card-img-top h-100"
                 src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/opYF-pickaflick.png"
               />
               <div class="card-body ol">
-                <p class="card-text text-light">
-                  YouReact is an HTML, CSS, and Vanilla JavaScript project that
-                  utilizes the YouTube Data API to search for reaction videos
+                <p class="card-text text-light px-3 w-100">
+                  Pick A Flick is a MERN Stack Project I created with a group of
+                  friends. We used Movie Api to get json data of the movies
+                  selected based on moods. Our backend is Node with Express API,
+                  MySql, and Firebase for user authentication.
+                  <button class="btn btn-block"><a href="#">site</a></button>
                 </p>
               </div>
-              <div class="banner w-100 text-white text-center py-3">
-                <h4>Pick-A-Flick</h4>
-              </div>
             </div>
-
-            <div class="card bg-dark border-0 rounded-0">
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <div class="card bg-dark">
               <img
-                class="card-img h-100"
+                class="card-img-top h-100"
                 src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/ZyBd-youreact_screen.PNG"
               />
               <div class="card-body ol">
-                <p class="card-text text-light">
+                <p class="card-text text-light px-3 w-100">
                   YouReact is an HTML, CSS, and Vanilla JavaScript project that
                   utilizes the YouTube Data API to search for reaction videos
+                  <button class="btn btn-block"><a href="#">site</a></button>
                 </p>
-              </div>
-              <div class="banner w-100 text-white text-center py-3">
-                <h4>YouReact</h4>
               </div>
             </div>
+          </div>
 
-            <div class="card bg-dark border-0 rounded-0">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-xs-2 mt-sm-2">
+            <div class="card bg-dark">
               <img
-                class="card-img h-100"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS62Sfnm2M7AdAPqpf7Pqj7h0JmxdQiuJfMLFNcqhAyYIMNhoXQ"
+                class="card-img-top h-100"
+                src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/QgbP-html-games.JPG"
               />
               <div class="card-body ol">
-                <p class="card-text text-light">
-                  YouReact is an HTML, CSS, and Vanilla JavaScript project that
-                  utilizes the YouTube Data API to search for reaction videos
+                <p class="card-text text-light px-3 w-100">
+                  Have you heard of FreeCodeCamp? HTML Games is a similiar
+                  venture, but for learning to make html games. All you need to
+                  know is some basic html and javascript.
+                  <button class="btn btn-block"><a href="#">site</a></button>
                 </p>
-              </div>
-              <div class="banner w-100 text-white text-center py-3">
-                <h4>YouReact</h4>
-              </div>
-            </div>
-
-            <div class="card bg-dark border-0 rounded-0">
-              <img
-                class="card-img h-100"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS62Sfnm2M7AdAPqpf7Pqj7h0JmxdQiuJfMLFNcqhAyYIMNhoXQ"
-              />
-              <div class="card-body ol">
-                <p class="card-text text-light">
-                  YouReact is an HTML, CSS, and Vanilla JavaScript project that
-                  utilizes the YouTube Data API to search for reaction videos
-                </p>
-              </div>
-              <div class="banner w-100 text-white text-center py-3">
-                <h4>YouReact</h4>
-              </div>
-            </div>
-
-            <div class="card bg-dark border-0 rounded-0">
-              <img
-                class="card-img h-100"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS62Sfnm2M7AdAPqpf7Pqj7h0JmxdQiuJfMLFNcqhAyYIMNhoXQ"
-              />
-              <div class="card-body ol">
-                <p class="card-text text-light">
-                  YouReact is an HTML, CSS, and Vanilla JavaScript project that
-                  utilizes the YouTube Data API to search for reaction videos
-                </p>
-              </div>
-              <div class="banner w-100 text-white text-center py-3">
-                <h4>YouReact</h4>
-              </div>
-            </div>
-
-            <div class="card bg-dark border-0 rounded-0">
-              <img
-                class="card-img h-100"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS62Sfnm2M7AdAPqpf7Pqj7h0JmxdQiuJfMLFNcqhAyYIMNhoXQ"
-              />
-              <div class="card-body ol">
-                <p class="card-text text-light">
-                  YouReact is an HTML, CSS, and Vanilla JavaScript project that
-                  utilizes the YouTube Data API to search for reaction videos
-                </p>
-              </div>
-              <div class="banner w-100 text-white text-center py-3 ">
-                <h4>YouReact</h4>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- about me section -->
+      </section>
 
-      <div id="about" class="container pt-5 py-3">
-        <div class="row">
-          <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-            <img
-              src="http://images.unsplash.com/photo-1530482817083-29ae4b92ff15?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjEyMDd9"
-              class="rounded-circle mx-auto d-block"
-              width="180px"
-              height="180px"
-            />
-          </div>
-          <div class="col col-sm-4 col-md-4 col-lg-4">
-            <p class="lead">
-              I'm a Front End Developer in San Diego, CA. I have passion for
-              dynamic interfaces and games.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="container mb-5">
-        <div class="row pt-3">
-          <div class="col">
-            <div class="card border-0">
-              <div class="card-body">
-                <h4 class="card-title">Dynamic</h4>
-                <p class="card-text">
-                  Let's leave behind copy pasted sites and static brochures. I
-                  make sure your site says You!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card border-0">
-              <div class="card-body">
-                <h4 class="card-title">Intuitive</h4>
-                <p class="card-text">
-                  My main priority is making sure you don't have to work too
-                  hard!
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card border-0">
-              <div class="card-body">
-                <h4 class="card-title">Fun</h4>
-                <p class="card-text">I also offer game development services</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <!-- FOOTER SECTION -->
-    <footer class="page-footer unique-color-dark mt-3">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="d-flex justify-content-center p-2">
-              <a href="https://github.com/Fneim" class="m-3"
-                ><i class="fa fa-github fa-lg fa-2x"></i
-              ></a>
-              <a href="https://www.linkedin.com/in/fargin-neim/" class="m-3"
-                ><i class="fa fa-linkedin fa-lg fa-2x"></i
-              ></a>
-              <a href="https://twitter.com/cant_find_1" class="m-3"
-                ><i class="fa fa-twitter fa-lg fa-2x"></i
-              ></a>
-              <button
-                type="button"
-                class="btn uppercase text-dark"
-                data-toggle="modal"
-                data-target="#contactModal"
+      <!-- contact -->
+      <section id="contact-section" class="container mt-4">
+        <h2 class="h4 text-uppercase headings">contact me</h2>
+        <div class="row mt-2">
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <ul class="list-group">
+              <li class="list-group-item  border-0">
+                <i class="fas fa-thumbtack mr-3"></i>San Diego, CA 92111, USA
+              </li>
+              <li class="list-group-item border-0">
+                <i class="fas fa-phone mr-3"></i>(858) 499-9540
+              </li>
+              <li class="list-group-item border-0">
+                <i class="fas fa-envelope mr-3"></i>farginneim@gmail.com
+              </li>
+              <a
+                class="list-group-item border-0"
+                href="https://www.linkedin.com/in/fargin-neim"
+                ><button class="btn btn-inline-block social">
+                  <i class="fab fa-linkedin-in mr-3"></i>LinkedIn
+                </button>
+              </a>
+              <a
+                class="list-group-item border-0"
+                href="https://github.com/Fneim"
+                ><button class="btn btn-inline-block social">
+                  <i class="fab fa-github mr-3"></i>Github
+                </button></a
               >
-                contact
-              </button>
-              <div id="contactModal" class="modal fade">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header unique-color-dark">
-                      <h5 class="modal-title text-muted ">
-                        Send me a message!
-                      </h5>
-                      <button
-                        type="button"
-                        class="close"
-                        data-dismiss="modal"
-                        aria-label="Close"
-                      >
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="form-group">
-                        <input
-                          type="text"
-                          class="form-control"
-                          placeholder="Name"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <input
-                          type="email"
-                          class="form-control"
-                          placeholder="Email"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <textarea
-                          type="text"
-                          class="form-control"
-                          placeholder="Message"
-                        ></textarea>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+              <a
+                class="list-group-item border-0"
+                href="https://twitter.com/cant_find_1"
+                ><button class="btn btn-inline-block social">
+                  <i class="fab fa-twitter mr-3"></i>Twitter
+                </button>
+              </a>
+            </ul>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="footer-copyright text-center py-2">
-        Copyright &copy; <span id="year"></span> <a href="#"> Fargin Neim</a>
-      </div>
-    </footer>
-    <!-- footer -->
-
-    <!-- bootstrap scripts -->
+      <!-- Footer -->
+      <footer class="page-footer font-small special-color-dark">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center">
+          © <span id="year" class="text-muted"></span
+          ><span>
+            Copyright: <a class="text-muted" href="#"> Fargin Neim</a></span
+          >
+        </div>
+        <!-- Copyright -->
+      </footer>
+    </div>
     <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="src/index.js"></script>
-    <script>
-      $("#year").text(new Date().getFullYear());
-      $(document).ready(function() {
-        $(".slide-container").slick({
-          arrows: true,
-          infinite: true,
-          speed: 300,
-          slidesToShow: 4,
-          slidesToScroll: 1,
-          responsive: [
-            {
-              breakpoint: 1224,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true
-              }
-            },
-            {
-              breakpoint: 900,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
-          ]
-        });
-      });
-    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="src/index.js"></script>
   </body>
 </html>

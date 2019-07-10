@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo|Rajdhani&display=swap");
+/* @import "~bootstrap/dist/css/bootstrap.min.css"; */
 html {
   scroll-behavior: smooth;
 }
@@ -7,47 +9,136 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  height: 100%;
+  font-family: "elianto";
 }
 
-.unique [class~="col"] {
+/* media queries for scrollbar */
+@media only screen and (max-width: 600px) {
+  html {
+    overflow: hidden;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #42a5f5;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #90caf9;
+  }
+}
+
+/* fonts */
+@font-face {
+  font-family: elianto;
+  src: url(Elianto-Regular.otf);
+}
+
+#app {
+  height: 100%;
+}
+
+/* nav styles */
+
+.navbar-toggler-icon,
+.fab,
+.fas {
+  color: #bbb;
+}
+
+.fab:hover,
+.fas:hover {
+  color: #42a5f5;
+  font-size: 20px;
+}
+
+.nav-link {
+  color: #ccc;
+}
+
+.headings {
+  font-family: "Arimo";
+}
+
+/* about styles */
+.jumbotron {
+  background-image: url("https://storage.googleapis.com/gweb-cloudblog-publish/images/Cloud_Code_for_VS_Code.max-1700x1700.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
-  padding: 0;
 }
 
-.slick-arrow {
-  position: absolute;
-  top: 50%;
+.home-content {
   z-index: 2;
+  font-family: "elianto";
 }
 
-.slick-prev {
-  left: 0%;
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background: #42a5f5;
+  opacity: 0.7;
+  z-index: 1;
+  filter: alpha(opacity=80);
 }
 
-.slick-next {
-  right: 0%;
+.profile-img {
+  background: #eee;
 }
+
+.about-me-text,
+.experience-text {
+  font-family: "Rajdhani";
+}
+
+.experience-text {
+  color: #d32f2f;
+}
+
+/* work page styles */
+
+.card-text {
+  font-family: "Arimo";
+  font-size: 2.1vh;
+}
+
+/* card styles */
 
 .card img {
   object-fit: cover;
 }
 
-/* 
-.intro div {
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-} */
-
 .card {
   position: relative;
   width: 100%;
+  font-family: "elianto";
 }
 
 .card img {
-  opacity: 0.3;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
+}
+
+.card:hover .ol {
+  opacity: 0.92;
 }
 
 .ol {
@@ -69,57 +160,24 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* .banner {
-  transition: 0.7s ease;
-  background: #fff;
-  text-align: justify;
-  font-size: 1em;
-} */
-
-.banner {
-  background: #ff3030;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  opacity: 0.8;
-  filter: alpha(opacity-80);
-  -webkit-transform: translate(50%, -80%);
-  transform: translate(-50%, -80%);
+/* contact page styles */
+#contact-page {
+  background: #111;
 }
 
-.card:hover .ol {
-  opacity: 0.92;
+.list-group-item {
+  background: none;
+  font-family: "Arimo";
 }
 
-@media only screen and (max-width: 484px) {
-  /* .slick-slide {
-    height: 300px;
-  }
-  .banner {
-    height: 20px;
-  } */
-}
-@media only screen and (max-width: 976px) {
-  .social {
-    display: inline-block;
-    position: absolute;
-    bottom: 0;
-    right: 10%;
-  }
-
-  .social span {
-    display: inline-block;
-  }
-
-  .my-img {
-    margin: auto;
-    display: block;
-  }
+.list-group-item {
+  color: #000;
 }
 
-@media only screen and (min-width: 768px) {
-  #works {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+.social {
+  background: #2196f3;
+}
+/* footer styles */
+footer {
+  font-family: "Arimo";
 }
