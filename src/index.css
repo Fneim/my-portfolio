@@ -10,7 +10,6 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: "elianto";
 }
 
 /* media queries for scrollbar */
@@ -34,13 +33,13 @@ body {
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #42a5f5;
+    background: #000;
     border-radius: 10px;
   }
 
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #90caf9;
+    background: #111;
   }
 }
 
@@ -54,39 +53,49 @@ body {
   height: 100%;
 }
 
+
 /* nav styles */
-
-.navbar-toggler-icon,
-.fab,
-.fas {
-  color: #bbb;
+.navbar {
+  background: #000;
 }
 
-.fab:hover,
-.fas:hover {
-  color: #42a5f5;
-  font-size: 20px;
+.navbar-toggler-icon {
+  color: #ddd;
 }
+
 
 .nav-link {
-  color: #ccc;
+  color: #ddd;
+}
+
+.nav-link:hover {
+  color: #006064;
+}
+
+.headings,
+.services {
+  font-family: "Arimo";
 }
 
 .headings {
-  font-family: "Arimo";
+  font-size: 2rem;
+  text-align:center;
+  margin:2rem 0;
+}
+
+#contact-section {
+  margin-bottom: 2%;
 }
 
 /* about styles */
 .jumbotron {
-  background-image: url("https://storage.googleapis.com/gweb-cloudblog-publish/images/Cloud_Code_for_VS_Code.max-1700x1700.png");
-  background-repeat: no-repeat;
-  background-size: cover;
   margin: 0;
 }
 
 .home-content {
   z-index: 2;
   font-family: "elianto";
+  color: #fff;
 }
 
 .overlay {
@@ -95,75 +104,108 @@ body {
   left: 0;
   right: 0;
   position: absolute;
-  background: #42a5f5;
-  opacity: 0.7;
+  background: #26a69a;
+  /* opacity: 0.7; */
   z-index: 1;
-  filter: alpha(opacity=80);
+  /* filter: alpha(opacity=80); */
 }
 
 .profile-img {
-  background: #eee;
+  padding:0;
+  margin:0;
 }
 
-.about-me-text,
-.experience-text {
-  font-family: "Rajdhani";
+#about-section, #work-section {
+  padding:2% 0 ;
+}
+
+.about-me-text {
+  font-family: "Arimo";
 }
 
 .experience-text {
-  color: #d32f2f;
+  color: #006064;
+}
+
+.social-network {
+  padding:30px 0;
+}
+
+.social-network-icons {
+  font-size:1.5rem;
+  color: #26a69a;
+  border:3px solid #26a69a;
+  border-radius: 50%;
+  margin-right:20px;
+}
+
+.social-network-resume {
+  color: #26a69a;
+  border:3px solid #26a69a;
+  border-radius: 10%;
+  font-size:1rem;
+}
+
+.social-network-icons:hover, .social-network-resume:hover {
+  background:#006064;
+  color:#fff;
+  border-color:#fff;
+  transition: 0.4s ease;
 }
 
 /* work page styles */
 
-.card-text {
-  font-family: "Arimo";
-  font-size: 2.1vh;
+#work-section {
+  background: #26a69a;
 }
 
 /* card styles */
 
-.card img {
-  object-fit: cover;
-}
-
-.card {
+.project-card {
   position: relative;
-  width: 100%;
-  font-family: "elianto";
+  width:28rem;
+  height:20rem;
 }
 
-.card img {
-  transition: 0.3s ease;
+.project-card-img, .project-card-img img {
+  width:100%;
+  height:100%;
 }
 
-.card:hover .ol {
-  opacity: 0.92;
-}
-
-.ol {
-  transition: 0.7s ease;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  background: #222;
-  text-align: justify;
-  font-size: 1em;
-}
-
-.ol,
-.ol p {
+.project-card-link {
+  font-family: "Arimo";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  z-index:1;
+  bottom:0;
+  left:0;
+  background: #006064;
+  width:100%;
+  height:0%;
+  opacity:0;
 }
+
+.project-card-link button {
+  display:block;
+}
+
+.project-card-link button a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.project-card-link button:hover {
+  border:none;
+  font-size:1.1rem;
+}
+
+.project-card:hover .project-card-link {
+  transition: 0.4s ease;
+  height:auto;
+  opacity: 1;
+}
+
 
 /* contact page styles */
-#contact-page {
-  background: #111;
-}
 
 .list-group-item {
   background: none;
@@ -175,9 +217,11 @@ body {
 }
 
 .social {
-  background: #2196f3;
+  background: #26a69a;
 }
-/* footer styles */
+/* footer
+ styles */
 footer {
   font-family: "Arimo";
+  background: #000;
 }

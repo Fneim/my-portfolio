@@ -34,34 +34,8 @@
   <body>
     <!-- containing div -->
     <div id="app" class="overflow-auto">
-      <div class="jumbotron position-sticky sitcky-top rounded-0">
-        <div class="overlay"></div>
-        <div class="container text-center">
-          <div class="row">
-            <div class="col home-content">
-              <div class="d-inline-block shadow rounded-circle profile-img p-1">
-                <img
-                  src="src/fargin.jpg"
-                  class="border d-block mx-auto rounded-circle"
-                  width="100px"
-                  height="100px"
-                  alt="profile pic of Fargin"
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="row mb-3">
-            <div class="col home-content text-light">
-              <span class="display-4 text-uppercase">fargin neim</span><br />
-              <span class="h1">web developer</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- navbar -->
-      <nav class="navbar navbar-expand-md bg-dark position-sticky sticky-top">
+      <nav class="navbar navbar-expand-md position-sticky sticky-top">
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
         <button
           class="navbar-toggler"
@@ -74,138 +48,162 @@
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item mr-3">
-              <a id="about" class="nav-link text-uppercase" href="#">about</a>
+              <a
+                id="about"
+                class="nav-link text-uppercase"
+                href="#about-section"
+                >about</a
+              >
             </li>
             <li class="nav-item mr-3">
-              <a id="work" class="nav-link text-uppercase" href="#">work</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a id="contact" class="nav-link text-uppercase" href="#"
-                >contact</a
+              <a id="work" class="nav-link text-uppercase" href="#work-section"
+                >work</a
               >
             </li>
             <li class="nav-item mr-3">
               <a
-                class="nav-link d-inline-block"
-                href="https://www.linkedin.com/in/fargin-neim"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a class="nav-link d-inline-block" href="https://github.com/Fneim"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a class="nav-link d-inline-block" href="#"
-                ><i class="fas fa-envelope"></i
-              ></a>
+                id="contact"
+                class="nav-link text-uppercase"
+                href="#contact-section"
+                >contact</a
+              >
             </li>
           </ul>
         </div>
       </nav>
 
-      <!-- about -->
-      <section id="about-section" class="container">
-        <div class="row h-50 mt-4">
-          <div
-            class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-md-left text-lg-left"
-          >
-            <h2 class="h4 text-uppercase mb-3 headings">skills</h2>
-            <p class="h5 text-md-left text-lg-left about-me-text">
-              I'm a <strong>Front End Web Developer</strong> with a burning
-              drive to learn new technologies and create! <br /><br />My toolset
-              consists of
-              <strong>Javascript, React, Vue, Express, and Node. </strong> I can
-              also play the role of a back-end developer. <br /><br />
-              I like to pass my time reading, geeking over anime, and wishing I
-              had super powers.
-            </p>
+      <div class="jumbotron position-sticky sitcky-top rounded-0">
+        <div class="overlay"></div>
+        <div class="container text-center">
+          <div class="row">
+            <div class="col home-content">
+              <div class="d-inline-block shadow rounded-circle profile-img">
+                <img
+                  src="src/fargin.jpg"
+                  class="border d-block mx-auto rounded-circle border-0"
+                  width="200px"
+                  height="200px"
+                  alt="profile pic of Fargin"
+                />
+              </div>
+            </div>
           </div>
-          <div
-            class="col-xs-12 col-sm-12 col-md-6 col-lg-6 text-md-left text-lg-left"
-          >
-            <h2 class=" h4 text-uppercase mb-3 headings">experience</h2>
-            <ul class="list-group experience-text">
-              <li class="h5 border-0">Avocado Tutors - Wordpress Developer</li>
-              <li class="h5 border-0">
-                RipeMetrics - Software Development Intern
-              </li>
-            </ul>
+
+          <div class="row mb-1">
+            <div class="col home-content">
+              <span class="display-4 text-uppercase">fargin neim</span><br />
+              <span class="h2">Full Stack Web Developer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- about -->
+      <section id="about-section">
+        <div class="row mt-4">
+          <div class="col">
+            <h2 class="h4 text-uppercase headings">about</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row h-50 mt-4">
+            <div class="col-md-6 col-lg-6 mx-auto">
+              <div class="d-flex h5 about-me-text">
+                <p class="mr-3 text-justify">
+                  I'm a Full Stack Web Developer living the dream in sunny San
+                  Diego. I like to build meaningful web applications. My toolset
+                  consists of Javascript, React, Express, and Node.
+                </p>
+                <p class="ml-3 text-justify">
+                  In my spare time, I enjoy reading, writing short stories,
+                  watching anime, and restaurant hopping.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- works -->
-      <section id="work-section" class="container mt-4">
+      <section id="work-section">
         <div class="row">
           <div class="col">
-            <h3 class="h4 text-uppercase headings">Projects</h3>
+            <h3 class="h4 text-uppercase headings pt-4 text-center text-white">
+              Projects
+            </h3>
           </div>
         </div>
-        <div class="row mt-2">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <div class="card">
-              <img
-                class="card-img-top h-100"
-                src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/_daI-travels-sake.JPG"
-              />
-              <div class="card-body ol">
-                <p class="card-text text-light px-3 w-100">
-                  Travel for Travel's Sake! You can be poor and go on vacation!
-                  That's the idea behind this application. I used Vue and
-                  Leezair Vacation Api to build an app that finds trips for
-                  based on your budget and your location.
-                  <button class="btn btn-block"><a href="#">site</a></button>
-                </p>
-              </div>
-            </div>
-          </div>
+        <div class="container">
+          <div class="row mt-2">
+            <div class="col">
+              <div class="d-flex justify-content-around mb-5">
+                <div class="project-card">
+                  <div class="project-card-img">
+                    <img
+                      src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/_daI-travels-sake.JPG"
+                      alt="travelers website image"
+                    />
+                  </div>
+                  <div class="project-card-link py-2">
+                    <button
+                      class="btn btn-inline-block text-white border mx-auto"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
 
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-xs-2 mt-sm-2">
-            <div class="card bg-dark">
-              <img
-                class="card-img-top h-100"
-                src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/opYF-pickaflick.png"
-              />
-              <div class="card-body ol">
-                <p class="card-text text-light px-3 w-100">
-                  Pick A Flick is a MERN Stack Project I created with a group of
-                  friends. We used Movie Api to get json data of the movies
-                  selected based on moods. Our backend is Node with Express API,
-                  MySql, and Firebase for user authentication.
-                  <button class="btn btn-block"><a href="#">site</a></button>
-                </p>
+                <div class="project-card">
+                  <div class="project-card-img">
+                    <img
+                      src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/opYF-pickaflick.png"
+                      alt="pick a flick website image"
+                    />
+                  </div>
+                  <div class="project-card-link py-2">
+                    <button
+                      class="btn btn-inline-block text-white border mx-auto"
+                    >
+                      <a href="https://pick-a-flick-ucsd.herokuapp.com/"
+                        >Learn More</a
+                      >
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-2">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <div class="card bg-dark">
-              <img
-                class="card-img-top h-100"
-                src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/ZyBd-youreact_screen.PNG"
-              />
-              <div class="card-body ol">
-                <p class="card-text text-light px-3 w-100">
-                  YouReact is an HTML, CSS, and Vanilla JavaScript project that
-                  utilizes the YouTube Data API to search for reaction videos
-                  <button class="btn btn-block"><a href="#">site</a></button>
-                </p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 mt-xs-2 mt-sm-2">
-            <div class="card bg-dark">
-              <img
-                class="card-img-top h-100"
-                src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/QgbP-html-games.JPG"
-              />
-              <div class="card-body ol">
-                <p class="card-text text-light px-3 w-100">
-                  Have you heard of FreeCodeCamp? HTML Games is a similiar
-                  venture, but for learning to make html games. All you need to
-                  know is some basic html and javascript.
-                  <button class="btn btn-block"><a href="#">site</a></button>
-                </p>
+              <div class="d-flex justify-content-around">
+                <div class="project-card">
+                  <div class="project-card-img">
+                    <img
+                      src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/ZyBd-youreact_screen.PNG"
+                      alt="youreact website image"
+                    />
+                  </div>
+                  <div class="project-card-link py-2">
+                    <button
+                      class="btn btn-inline-block text-white border mx-auto"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
+
+                <div class="project-card">
+                  <div class="project-card-img">
+                    <img
+                      src="https://uploads.codesandbox.io/uploads/user/cad5fda9-d474-4658-8faf-25d837b04955/QgbP-html-games.JPG"
+                      alt="html games website image"
+                    />
+                  </div>
+                  <div class="project-card-link py-2">
+                    <button
+                      class="btn btn-inline-block text-white border mx-auto"
+                    >
+                      Learn More
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -213,54 +211,44 @@
       </section>
 
       <!-- contact -->
-      <section id="contact-section" class="container mt-4">
-        <h2 class="h4 text-uppercase headings">contact me</h2>
-        <div class="row mt-2">
-          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-            <ul class="list-group">
-              <li class="list-group-item  border-0">
-                <i class="fas fa-thumbtack mr-3"></i>San Diego, CA 92111, USA
-              </li>
-              <li class="list-group-item border-0">
-                <i class="fas fa-phone mr-3"></i>(858) 499-9540
-              </li>
-              <li class="list-group-item border-0">
-                <i class="fas fa-envelope mr-3"></i>farginneim@gmail.com
-              </li>
-              <a
-                class="list-group-item border-0"
-                href="https://www.linkedin.com/in/fargin-neim"
-                ><button class="btn btn-inline-block social">
-                  <i class="fab fa-linkedin-in mr-3"></i>LinkedIn
-                </button>
-              </a>
-              <a
-                class="list-group-item border-0"
-                href="https://github.com/Fneim"
-                ><button class="btn btn-inline-block social">
-                  <i class="fab fa-github mr-3"></i>Github
-                </button></a
-              >
-              <a
-                class="list-group-item border-0"
-                href="https://twitter.com/cant_find_1"
-                ><button class="btn btn-inline-block social">
-                  <i class="fab fa-twitter mr-3"></i>Twitter
-                </button>
-              </a>
-            </ul>
+      <section id="contact-section">
+        <div class="row mt-4">
+          <div class="col">
+            <h2 class="h4 text-uppercase headings">contact me</h2>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row social-network">
+            <div class="col">
+              <div class="d-flex justify-content-center align-middle">
+                <a
+                  class="nav-link d-inline-block social-network-icons"
+                  href="https://www.linkedin.com/in/fargin-neim"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  class="nav-link d-inline-block social-network-icons"
+                  href="https://github.com/Fneim"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a class="nav-link d-inline-block social-network-icons" href="#"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+                <a class="nav-link d-inline-block social-network-resume" href="#"
+                  ><span>Resume</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Footer -->
-      <footer class="page-footer font-small special-color-dark">
+      <footer class="fixed-bottom">
         <!-- Copyright -->
-        <div class="footer-copyright text-center">
-          © <span id="year" class="text-muted"></span
-          ><span>
-            Copyright: <a class="text-muted" href="#"> Fargin Neim</a></span
-          >
+        <div class="text-center">
+          Copyright © <a class="text-muted" href="#"> Fargin Neim </a
+          ><span id="year" class="text-muted"></span>
         </div>
         <!-- Copyright -->
       </footer>
