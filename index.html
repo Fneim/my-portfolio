@@ -3,6 +3,13 @@
   <head>
     <title>Fargin Neim - Web Developer</title>
     <meta charset="UTF-8" />
+    <meta name="description" content="web development portfolio" />
+    <meta
+      name="keywords"
+      content="web developer, development, HTML,CSS,JavaScript, 
+			react, bootstrap, content management, e-commerce"
+    />
+    <meta name="author" content="Fargin Neim" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Font Awesome -->
@@ -35,18 +42,25 @@
     <!-- containing div -->
     <div id="app" class="overflow-auto">
       <!-- navbar -->
-      <nav class="navbar navbar-expand-md position-sticky sticky-top">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <nav class="navbar navbar-expand-md fixed-top">
         <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#collapsibleNavbar"
         >
-          <span class="fas fa-align-justify"></span>
+          <span class="fas fa-align-justify text-muted"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
           <ul class="navbar-nav mx-auto">
+            <li class="nav-item mr-3">
+              <a 
+                class="nav-link rounded"
+                href="#jumbotron-section"
+                ><img src="src/favicon.ico" alt="logo" width="25px" height="25px"/></a
+              >
+            </li>
             <li class="nav-item mr-3">
               <a
                 id="about"
@@ -72,7 +86,7 @@
         </div>
       </nav>
 
-      <div class="jumbotron position-sticky sitcky-top rounded-0">
+      <div id="jumbotron-section" class="jumbotron rounded-0">
         <div class="overlay"></div>
         <div class="container text-center">
           <div class="row">
@@ -108,17 +122,32 @@
         <div class="container">
           <div class="row h-50 mt-4">
             <div class="col-md-6 col-lg-6 mx-auto">
-              <div class="d-flex h5 about-me-text">
-                <p class="mr-3 text-justify">
+              <div
+                class="d-flex flex-xs-column flex-sm-column h5 about-me-text"
+              >
+                <p class="mr-md-3 mr-lg-3 text-justify">
                   I'm a Full Stack Web Developer living the dream in sunny San
                   Diego. I like to build meaningful web applications. My toolset
                   consists of Javascript, React, Express, and Node.
                 </p>
-                <p class="ml-3 text-justify">
+                <p class="ml-md-3 ml-lg-3 text-justify">
                   In my spare time, I enjoy reading, writing short stories,
                   watching anime, and restaurant hopping.
                 </p>
               </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col text-center">
+              <form method="GET" action="src/WebDeveloper.pdf">
+                <button
+                  type="submit"
+                  class="d-inline-block border rounded social-network-resume"
+                  href="#"
+                >
+                  <span>Resume</span>
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -131,12 +160,17 @@
             <h3 class="h4 text-uppercase headings pt-4 text-center text-white">
               Projects
             </h3>
+            <p class="text-white text-center">
+              Click each project to see more.
+            </p>
           </div>
         </div>
         <div class="container">
-          <div class="row mt-2">
+          <div class="row">
             <div class="col">
-              <div class="d-flex justify-content-around mb-5">
+              <div
+                class="d-flex flex-container flex-xs-column flex-sm-column flex-md-row flex-lg-row justify-content-around"
+              >
                 <div class="project-card">
                   <div class="project-card-img">
                     <img
@@ -148,7 +182,7 @@
                     <button
                       class="btn btn-inline-block text-white border mx-auto"
                     >
-                      Learn More
+                      See More
                     </button>
                   </div>
                 </div>
@@ -165,14 +199,19 @@
                       class="btn btn-inline-block text-white border mx-auto"
                     >
                       <a href="https://pick-a-flick-ucsd.herokuapp.com/"
-                        >Learn More</a
+                        >See More</a
                       >
                     </button>
                   </div>
                 </div>
               </div>
-
-              <div class="d-flex justify-content-around">
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col">
+              <div
+                class="d-flex flex-xs-column flex-sm-column flex-md-row flex-lg-row justify-content-around mb-5"
+              >
                 <div class="project-card">
                   <div class="project-card-img">
                     <img
@@ -184,7 +223,7 @@
                     <button
                       class="btn btn-inline-block text-white border mx-auto"
                     >
-                      Learn More
+                      See More
                     </button>
                   </div>
                 </div>
@@ -200,7 +239,7 @@
                     <button
                       class="btn btn-inline-block text-white border mx-auto"
                     >
-                      Learn More
+                      See More
                     </button>
                   </div>
                 </div>
@@ -234,9 +273,6 @@
                 <a class="nav-link d-inline-block social-network-icons" href="#"
                   ><i class="fas fa-envelope"></i
                 ></a>
-                <a class="nav-link d-inline-block social-network-resume" href="#"
-                  ><span>Resume</span>
-                </a>
               </div>
             </div>
           </div>
