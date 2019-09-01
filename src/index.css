@@ -43,6 +43,7 @@ body {
 #app {
   width: 100%;
   height: auto;
+  overflow-x:hidden;
 }
 
 /* nav styles */
@@ -154,7 +155,11 @@ body {
 }
 
 /* card styles */
-
+@media only screen and (min-width:692px) and (max-width:892px) and (orientation:landscape) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
 .project-card {
   position: relative;
   width: 28rem;
